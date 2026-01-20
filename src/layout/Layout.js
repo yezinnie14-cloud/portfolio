@@ -4,10 +4,12 @@ import Footer from "../components/Footer";
 import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
-    <div>
+    <div className="app">
       <Header/>
-      <Gnb/>
-      <Outlet/>
+      <div className="body">
+        <Gnb/>
+        <Outlet/>
+      </div>
       <Footer />
     </div>
   )

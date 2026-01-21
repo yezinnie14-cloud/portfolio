@@ -8,6 +8,7 @@
   border-radius: 0.8rem;
   border: 1px solid $stroke;
   background-color: $card-bg;
+  margin-bottom: 2rem;
   .list-header{
     @include flex-layout(row, space-between, center, 1rem);
     .list-title{

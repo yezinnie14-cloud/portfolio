@@ -1,6 +1,13 @@
+import Listup from "../../../components/common/Listup";
+import "./List.scss";
 const PersonalList = () => {
   return (
-    <div>PersonalList</div>
+   <section className="list">
+      <h2 className="title"># Personal Projects</h2>
+
+      <Listup />
+      <Listup />
+    </section>
   )
 }
 

@@ -1,4 +1,11 @@
-.team-list{
-  height: 100vh;
+@use "src/assets/scss/variables.scss"as *; 
+@use "src/assets/scss/mixins.scss"as *; 
+@use "src/assets/scss/fonts.scss"as *;
+.list{
+  height: 100%;
+  min-height: 88vh;
   padding: 1rem 3rem;
+  .title{
+    color: $color-blue;
+  }
 }

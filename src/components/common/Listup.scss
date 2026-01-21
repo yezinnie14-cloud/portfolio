@@ -1,0 +1,38 @@
+@use "src/assets/scss/variables.scss"as *; 
+@use "src/assets/scss/mixins.scss"as *; 
+@use "src/assets/scss/fonts.scss"as *;
+
+.list-card{
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  border: 1px solid $stroke;
+  background-color: $card-bg;
+  .list-header{
+    @include flex-layout(row, space-between, center, 1rem);
+    .list-title{
+      @include title-b();
+      color: $color-yellow;
+    }
+    .list-icon{
+      @include caption-r();
+      color: $color-ccc;
+    }
+  }
+  .list-date{
+    color: $color-caption;
+    .highlight{
+      color: $color-green;
+    }
+  }
+  .desc{
+
+  }
+  .key-highlights{
+    .highlights{
+      color: $keyword-blue;
+    }
+    li{}
+  }
+
+}

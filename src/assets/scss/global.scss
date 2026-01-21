@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as *;
 @use "./fonts" as *;
 @use "./mixins" as *;
 
@@ -22,6 +22,7 @@ button {
 }
 html {
   font-size: 16px;
+  color: $color-ccc;
 }
 body {
   @include font-face;

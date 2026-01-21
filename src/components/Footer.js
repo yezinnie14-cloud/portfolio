@@ -1,10 +1,13 @@
+import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <div>yejin</div>
-      <div>04.08.14</div>
-      <div>yezinnie14@gmail.com</div>
-      <div>010-9901-7027</div>
+      <div className="left">Park Ye Jin</div>
+      <div className="right">
+      <div>Birthday</div>
+      <div>Email</div>
+      <div>Phone-Num</div>
+      </div>
 
       </div>
   )

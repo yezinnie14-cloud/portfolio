@@ -1,93 +1,87 @@
 @use "../assets/scss/mixins" as *;
+@use "../assets/scss/variables" as *;
+@use "../assets/scss/fonts" as *;
 
 
 .main {
-  padding: 18px;
-  max-width: 980px;
+  padding: 3rem;
+  // max-width: 980px;
+  .h2{
+  @include title-r();
+  color: $color-blue;
 }
-
-.section { margin-top: 18px; }
-
-.h2 {
-  font-size: 14px;
-  opacity: .9;
-  margin: 0 0 10px;
-}
-
-.hero {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  padding: 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.03);
-
-//   @include mobile {
-//     gap: 10px;
-//     padding: 12px;
-//   }
-}
-
-.avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 14px;
+  .introbox {
+    @include flex-layout(row, "", center, 0.8rem);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid $stroke;
+  background: $card-bg;
+  .faceimg {
+  width: 150px;
+  height: 150px;
+  border-radius: 0.8rem;
   background: rgba(100, 200, 255, 0.18);
   flex: 0 0 auto;
-
-//   @include mobile {
-//     width: 52px;
-//     height: 52px;
-//     border-radius: 12px;
-//   }
+}
+.intro-txt1{
+  @include body-r();
+  color: $color-yellow;
+}
+.intro-txt2{
+  @include caption-r();
+  line-height: 2;
+  color: $color-ccc;
+  .highlight{
+    color: $color-green;
+    @include body-b();
+}
+  }
 }
 
-.badge {
-  display: inline-block;
-  font-size: 12px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.08);
+
+.section { 
+  margin-top: 18px;
+.title{
+  @include body-r();
+  margin: 0 0 10px;
+  color: $color-blue;
 }
-
-.intro {
-  margin: 10px 0 0;
-  line-height: 1.6;
-  opacity: .9;
-
-//   @include mobile {
-//     font-size: 14px;
-//     line-height: 1.55;
-//   }
-}
-
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 12px;
-
-//   @include mobile {
-//     grid-template-columns: 1fr; // ✅ 모바일에서 1열로
-//     gap: 10px;
-//   }
-}
-
-.card {
-  padding: 14px;
-  border-radius: 14px;
+  @include flex-layout($gap:3.5rem);
+  .card {
+  padding: 5rem;
+  border-radius: 0.8rem;
   border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(255,255,255,0.03);
-
-//   @include mobile {
-//     padding: 12px;
-//     border-radius: 12px;
-//   }
+  background-color: $card-bg;
+  .cardTitle { 
+    font-weight: 700;
+   }
+.card-txt { 
+  margin-top: 6px; 
+  opacity: .8;
+  font-size: 13px;
+ }
+}
+}
 }
 
-.cardTitle { font-weight: 700; }
-.cardDesc { margin-top: 6px; opacity: .8; font-size: 13px; }
+
+
+
+
+// .intro-txt2 {
+//   margin: 10px 0 0;
+//   line-height: 1.6;
+//   opacity: .9;
+
+
+// }
+
+
+
+
+
+
 
 .rows {
   display: flex;
@@ -104,11 +98,7 @@
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.02);
 
-//   @include mobile {
-//     flex-direction: column;   // ✅ 모바일에서 세로 스택
-//     gap: 6px;
-//     padding: 12px;
-//   }
+
 }
 
 .rowTitle { font-weight: 600; }
@@ -131,9 +121,6 @@
   overflow: auto;
   font-size: 13px;
 
-//   @include mobile {
-//     font-size: 12px;
-//   }
 }
 
 .explore {
@@ -159,4 +146,5 @@
   background: rgba(255,255,255,0.02);
   font-size: 12px;
   opacity: .85;
+}
 }

@@ -1,0 +1,69 @@
+{
+  "id": "portfolio",
+  "type": "folder",
+  "name": "portfolio",
+  "children": [
+    {
+      "id": "readme",
+      "type": "file",
+      "name": "README.md",
+      "path": "/"
+    },
+    {
+      "id": "about",
+      "type": "file",
+      "name": "about.",
+      "path": "/about"
+    },
+    {
+      "id": "projects",
+      "type": "folder",
+      "name": "projects.",
+      "children": [
+        {
+          "id": "all",
+          "type": "folder",
+          "name": "ALL",
+          "children": [
+            {
+              "id": "team",
+              "type": "file",
+              "name": "Team.",
+              "path": "/projects/team"
+            },
+            {
+              "id": "clone",
+              "type": "file",
+              "name": "Clone.",
+              "path": "/projects/clone"
+            },
+            {
+              "id": "personal",
+              "type": "file",
+              "name": "Personal.",
+              "path": "/projects/personal"
+            },
+            {
+              "id": "practical",
+              "type": "file",
+              "name": "Practical.",
+              "path": "/projects/practical"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "type": "file",
+      "name": "skills.",
+      "path": "/skills"
+    },
+    {
+      "id": "contact",
+      "type": "file",
+      "name": "contact.",
+      "path": "/contact"
+    }
+  ]
+}

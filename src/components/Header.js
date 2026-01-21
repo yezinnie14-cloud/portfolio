@@ -1,6 +1,9 @@
+import "./Header.scss";
 const Header = () => {
   return (
-    <div>Header</div>
+    <div className="header">
+      Portfolio-Yejin Studio Code
+    </div>
   )
 }
 

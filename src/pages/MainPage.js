@@ -85,10 +85,10 @@ $ npm run dev`}
       <section className="section">
         <h2 className="h2">## 탐색하기</h2>
         <ul className="explore">
-          <li><span className="file">about.md</span> — 자기 소개</li>
-          <li><span className="file">projects.md</span> — 주요 프로젝트</li>
-          <li><span className="file">skills.md</span> — 기술 스택</li>
-          <li><span className="file">contact.md</span> — 연락 방법</li>
+          <li><span className="file">about.</span> — 포트폴리오 소개</li>
+          <li><span className="file">projects.</span> — 주요 프로젝트</li>
+          <li><span className="file">skills.</span> — 기술 스택</li>
+          <li><span className="file">contact.</span> — 연락 방법</li>
         </ul>
 
         <div className="tip">

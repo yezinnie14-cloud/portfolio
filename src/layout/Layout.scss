@@ -1,0 +1,95 @@
+@use "src/assets/scss/_variables.scss"as *; 
+/* Layout.scss */
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header / Footer 제외한 가운데 영역 */
+.body {
+  flex: 1;
+  display: flex;
+  min-height: 0; // ⭐ 중요: 내부 스크롤 정상화
+}
+
+/* 왼쪽 사이드바(Gnb) */
+.body > nav,
+.gnb {
+  width: 240px;        // 필요하면 200~280 사이 조절
+  flex-shrink: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: auto;
+  background-color: $card-bg;
+}
+
+/* 오른쪽 에디터 영역 (TabBar + Outlet) */
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  background-color: $editor-bg;
+  min-width: 0;  // ⭐ 중요: 오른쪽 영역이 줄어들 때 깨짐 방지
+  min-height: 0; // ⭐ 중요: Outlet 스크롤을 editor 안에서만 되게
+}
+
+/* 탭바 (상단 고정) */
+.tabbar {
+  height: 44px;          // VS Code 느낌이면 36~44 추천
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  /* 스크롤바 숨기고 싶으면 아래 사용 (선택) */
+  // scrollbar-width: none;
+  // &::-webkit-scrollbar { display: none; }
+}
+
+/* 탭 하나 */
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+
+  .close {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+
+    .close {
+      opacity: 1;
+    }
+  }
+
+  &.active {
+    background: rgba(255, 255, 255, 0.10);
+  }
+}
+
+/* Outlet (페이지 내용) */
+// .editor > :last-child {
+//   flex: 1;
+//   min-height: 0;
+//   overflow: auto; // ✅ 내용 길면 여기만 스크롤
+//   padding: 16px;  // 필요 없으면 제거
+// }

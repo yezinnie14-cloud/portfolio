@@ -12,9 +12,10 @@ export default function Main() {
           <p className="intro-txt2">
             저는 사용자 경험을 중심으로 생각하는{" "}
             <span className="highlight">프론트엔드 개발자 박예진</span>입니다.
-            깔끔한 코드와 더 편리하고 감각있는 UI를 만들기 위해 
+            깔끔한 코드와 더 편리하고 감각있는 UI를 만들기 위해
             <br />
-            노력하고 있습니다. 소통 능력이 좋아 팀 활동도 좋아하고, 책임감이 강해 맡은 바를 최선을 다합니다.
+            노력하고 있습니다. 소통 능력이 좋아 팀 활동도 좋아하고, 책임감이
+            강해 맡은 바를 최선을 다합니다.
           </p>
         </div>
       </section>
@@ -71,7 +72,6 @@ export default function Main() {
         </blockquote>
       </section>
 
-      {/* QUICK START */}
       <section className="section">
         <p className="title">## 빠른 시작</p>
         <pre className="code">
@@ -84,7 +84,7 @@ $ npm run dev`}
       {/* EXPLORE */}
       <section className="section">
         <p className="title">## 탐색하기</p>
-        <ul className="explore">
+        <ul className="desc">
           <li>
             <span className="file">about.</span> — 포트폴리오 소개
           </li>

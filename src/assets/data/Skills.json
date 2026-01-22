@@ -1,0 +1,35 @@
+{
+  "skills": [
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "items": [
+        { "id": "react", "label": "React", "icon": "react.svg" },
+        { "id": "gsap", "label": "GSAP", "icon": "gsap.svg" },
+        { "id": "js", "label": "JavaScript", "icon": "js.svg" },
+        { "id": "scss", "label": "SCSS", "icon": "scss.svg" },
+        { "id": "supabase", "label": "Supabase", "icon": "supabase.svg" },
+        { "id": "html", "label": "HTML5", "icon": "html5.svg" },
+        { "id": "css", "label": "CSS", "icon": "css.svg" }
+      ]
+    },
+    {
+      "id": "designer",
+      "title": "Designer",
+      "items": [
+        { "id": "figma", "label": "Figma", "icon": "figma.svg" },
+        { "id": "ps", "label": "Photoshop", "icon": "photoshop.svg" },
+        { "id": "ai", "label": "Illustrator", "icon": "illustrator.svg" }
+      ]
+    },
+    {
+      "id": "communication",
+      "title": "Communication",
+      "items": [
+        { "id": "github", "label": "GitHub", "icon": "github.svg" },
+        { "id": "slack", "label": "Slack", "icon": "slack.svg" },
+        { "id": "notion", "label": "Notion", "icon": "notion.svg" }
+      ]
+    }
+  ]
+}

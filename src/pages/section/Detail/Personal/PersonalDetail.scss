@@ -1,0 +1,206 @@
+/* src/pages/section/Detail/Personal/PersonalDetail.scss */
+/* ✅ 색상 변수 없이, 중첩만 사용 */
+
+.detail-page {
+  padding: 24px;
+}
+
+.detail-top {
+  margin-bottom: 18px;
+
+  &__back {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.85;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  &__tag {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    opacity: 0.75;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+}
+
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: inherit;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  &:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  &--primary {
+    background: rgba(0, 176, 255, 0.20);
+    border-color: rgba(0, 176, 255, 0.35);
+  }
+}
+
+/* VSCode split */
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+
+  &--open {
+    grid-template-columns: 1fr 520px;
+  }
+
+  &__left {
+    min-width: 0;
+  }
+
+  &__right {
+    min-width: 0;
+  }
+}
+
+/* README panels */
+.panel {
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 14px;
+
+  &__title {
+    margin: 0 0 10px;
+    font-size: 14px;
+    opacity: 0.95;
+  }
+
+  &__text {
+    margin: 0;
+    opacity: 0.8;
+    line-height: 1.65;
+    font-size: 13px;
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 18px;
+    opacity: 0.82;
+    line-height: 1.7;
+    font-size: 13px;
+  }
+}
+
+.ts {
+  &__k {
+    margin: 12px 0 6px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  &__v {
+    margin: 0;
+    opacity: 0.82;
+    line-height: 1.65;
+    font-size: 13px;
+  }
+}
+
+/* Preview window (흰 배경은 안쪽 content만) */
+.preview-window {
+  position: sticky;
+  top: 16px;
+  height: calc(100vh - 32px);
+
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+
+  transform: translateX(12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.split--open .preview-window {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.preview-window__titlebar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.preview-window__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.preview-window__tab {
+  font-size: 12px;
+  opacity: 0.85;
+  margin: 0;
+  flex: 1;
+}
+
+.preview-window__close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.preview-window__content {
+  background: #fff;
+  padding: 12px;
+  height: calc(100% - 44px);
+  overflow: auto;
+}
+
+.preview-window__img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}

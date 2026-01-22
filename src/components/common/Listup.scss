@@ -35,6 +35,19 @@
     }
     li{}
   }
+  .skills{
+     display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+    .skill-item{
+  padding: 6px 12px;
+  border-radius: 0.5rem;
+  color: $color-blue;
+  background: $editor-bg;
+  border: 1px solid $stroke;
+  white-space: nowrap;
+    }
+  }
 
 }
 

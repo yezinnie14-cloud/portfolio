@@ -1,51 +1,53 @@
-@use "src/assets/scss/_variables.scss"as *; 
+@use "src/assets/scss/_variables.scss" as *;
+
 .clone-detail {
   padding: 24px;
 
-  .clone-head {
+  /* ================= HEADER ================= */
+  .clone-header {
     margin-bottom: 16px;
-
-    &__back {
-      background: none;
-      border: 0;
-      color: #7cc7ff;
-      cursor: pointer;
-      padding: 0;
-      font-size: 14px;
-    }
-
-    &__tag {
-      opacity: 0.7;
-      margin: 10px 0 6px;
-      font-size: 13px;
-    }
-
-    &__title {
-      margin: 0;
-      font-size: 40px;
-      font-weight: 800;
-      color: $color-yellow;
-    }
-
-    &__subtitle {
-      margin: 6px 0 14px;
-      opacity: 0.75;
-    }
-
-    &__actions {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-
-    &__tabs {
-      display: flex;
-      gap: 8px;
-    }
   }
 
-  .mini-tab {
+  .back-btn {
+    background: none;
+    border: 0;
+    color: #7cc7ff;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .clone-tag {
+    opacity: 0.7;
+    margin: 10px 0 6px;
+    font-size: 13px;
+  }
+
+  .clone-title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+    color: $color-yellow;
+  }
+
+  .clone-subtitle {
+    margin: 6px 0 14px;
+    opacity: 0.75;
+  }
+
+  .clone-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .clone-tabs {
+    display: flex;
+    gap: 8px;
+  }
+
+  .tab {
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: rgba(255, 255, 255, 0.04);
     border-radius: 10px;
@@ -53,80 +55,81 @@
     cursor: pointer;
     font-size: 13px;
 
-    &.is-active {
+    &.active {
       border-color: rgba(124, 199, 255, 0.35);
       background: rgba(124, 199, 255, 0.08);
     }
   }
 
+  /* ================= BODY ================= */
   .clone-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
     min-height: calc(100vh - 220px);
-
-    &__left {
-      overflow: auto;
-      padding-right: 10px;
-    }
-
-    &__right {
-      overflow: auto;
-      padding-left: 10px;
-      border-left: 2px solid rgba(0, 176, 255, 0.18);
-    }
   }
 
-  .panel {
+  .clone-left {
+    overflow: auto;
+    padding-right: 10px;
+  }
+
+  .clone-right {
+    overflow: auto;
+    padding-left: 10px;
+    border-left: 2px solid rgba(0, 176, 255, 0.18);
+  }
+
+  /* ================= INFO BLOCK ================= */
+  .info-block {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 14px;
     padding: 16px;
     margin-bottom: 14px;
-
-    &__title {
-      margin: 0 0 10px;
-      font-size: 15px;
-      font-weight: 700;
-    }
-
-    &__sub {
-      margin: 14px 0 8px;
-      font-size: 14px;
-      font-weight: 700;
-      opacity: 0.9;
-    }
-
-    &__text {
-      margin: 0;
-      opacity: 0.85;
-      line-height: 1.6;
-    }
-
-    &__list {
-      margin: 0;
-      padding-left: 18px;
-      display: grid;
-      gap: 6px;
-      opacity: 0.9;
-      line-height: 1.6;
-    }
-
-    &--soft {
-      background: rgba(255, 255, 255, 0.02);
-    }
   }
 
-  .compare {
+  .info-title {
+    margin: 0 0 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .info-sub {
+    margin: 14px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.9;
+  }
+
+  .info-text {
+    margin: 0;
+    opacity: 0.85;
+    line-height: 1.6;
+  }
+
+  .info-list {
+    margin: 0;
+    padding-left: 18px;
+    display: grid;
+    gap: 6px;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  /* ================= COMPARE ================= */
+  .compare-view {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
+  }
 
-    &__label {
-      font-weight: 700;
-      margin-bottom: 8px;
-      opacity: 0.85;
-    }
+  .compare-col {}
+
+  .compare-label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    opacity: 0.85;
   }
 
   .preview-frame {
@@ -135,36 +138,32 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
     background: #fff;
     min-height: 420px;
-
-    &__img {
-      width: 100%;
-      display: block;
-    }
-
-    &__empty {
-      padding: 18px;
-      font-size: 13px;
-      opacity: 0.7;
-    }
   }
 
-  .checklist {
-    &__title {
-      margin: 0 0 12px;
-      font-size: 16px;
-      font-weight: 800;
-    }
-
-    &__list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 14px;
-      display: grid;
-      gap: 10px;
-    }
+  .preview-empty {
+    padding: 18px;
+    font-size: 13px;
+    opacity: 0.7;
   }
 
-  .check {
+  /* ================= CHECKLIST ================= */
+  .checklist-view {}
+
+  .checklist-title {
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .checklist-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .check-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -172,33 +171,34 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 10px 12px;
-
-    &__badge {
-      width: 28px;
-      display: grid;
-      place-items: center;
-      opacity: 0.9;
-    }
-
-    &__text {
-      opacity: 0.9;
-    }
   }
 
+  .check-icon {
+    width: 28px;
+    display: grid;
+    place-items: center;
+    opacity: 0.9;
+  }
+
+  .check-text {
+    opacity: 0.9;
+  }
+
+  /* ================= RESPONSIVE ================= */
   @media (max-width: 980px) {
     .clone-body {
       grid-template-columns: 1fr;
       min-height: auto;
-
-      &__right {
-        border-left: 0;
-        border-top: 2px solid rgba(0, 176, 255, 0.18);
-        padding-left: 0;
-        padding-top: 12px;
-      }
     }
 
-    .compare {
+    .clone-right {
+      border-left: 0;
+      border-top: 2px solid rgba(0, 176, 255, 0.18);
+      padding-left: 0;
+      padding-top: 12px;
+    }
+
+    .compare-view {
       grid-template-columns: 1fr;
     }
   }

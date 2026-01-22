@@ -37,7 +37,7 @@ function Lg() {
 
         <p className="clone-head__tag">#키워드 #클론프로젝트 #GSAP</p>
         <h1 className="clone-head__title">LG U+ 프라이버시 센터</h1>
-        <p className="clone-head__subtitle">ConnectWave 홈페이지 클론</p>
+        <p className="clone-head__subtitle">LG U+ 홈페이지 클론</p>
 
         <div className="clone-head__actions">
           {links.live ? (

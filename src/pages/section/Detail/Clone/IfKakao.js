@@ -2,7 +2,7 @@
 import "./CloneDetail.scss";
 import { useMemo, useState } from "react";
 
-function ConnectWave() {
+function IfKakao() {
   const [mode, setMode] = useState("compare"); // "compare" | "checklist"
 
   const links = useMemo(
@@ -36,8 +36,8 @@ function ConnectWave() {
         </button>
 
         <p className="clone-head__tag">#키워드 #클론프로젝트 #GSAP</p>
-        <h1 className="clone-head__title">ConnectWave</h1>
-        <p className="clone-head__subtitle">ConnectWave 홈페이지 클론</p>
+        <h1 className="clone-head__title">IfKakao</h1>
+        <p className="clone-head__subtitle">IfKakao 홈페이지 클론</p>
 
         <div className="clone-head__actions">
           {links.live ? (
@@ -189,4 +189,4 @@ function ConnectWave() {
   );
 }
 
-export default ConnectWave;
+export default IfKakao;

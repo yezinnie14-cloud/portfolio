@@ -36,8 +36,8 @@ function Momentum() {
         </button>
 
         <p className="clone-head__tag">#키워드 #클론프로젝트 #GSAP</p>
-        <h1 className="clone-head__title">ConnectWave</h1>
-        <p className="clone-head__subtitle">ConnectWave 홈페이지 클론</p>
+        <h1 className="clone-head__title">Momentum</h1>
+        <p className="clone-head__subtitle">Momentum 대시보드 클론</p>
 
         <div className="clone-head__actions">
           {links.live ? (

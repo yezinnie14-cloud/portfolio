@@ -6,7 +6,7 @@
 
 .editor {
   display: grid;
-  height: calc(100vh - 56px); /* 탭바 높이에 맞춰 조절 */
+  // height: calc(100vh - 6px); 
 }
 
 /* 처음엔 왼쪽만 */
@@ -22,7 +22,7 @@
 .editor__left {
   overflow: auto;
   padding: 24px;
-  background: rgba(255, 255, 255, 0.02);
+  // background: rgba(255, 255, 255, 0.02);
 }
 
 /* split일 때만 가운데 라인 */
@@ -63,7 +63,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.25);
+  // background: rgba(255, 255, 255, 0.25);
 }
 
 .preview-shell__title {

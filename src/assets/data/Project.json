@@ -1,0 +1,185 @@
+{
+  "team": [
+    {
+      "id": "zio",
+      "title": "ZIO (Zari-It-O)",
+      "period": "2026.01.02 - 01.13",
+      "role": "소스관리 담당",
+      "desc": "주차장 관리 웹 사이트",
+      "highlights": [
+        "지도 API를 통한 주차 예약 시스템",
+        "Supabase data 사용",
+        "반응형 디자인 구현"
+      ],
+      "skills": ["React", "Supabase", "Figma", "Node.js", "Scss"],
+      "to": "/projects/team/zio",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "pacey",
+      "title": "PACEY (페이시)",
+      "period": "2025.12.22 - 12.26",
+      "role": "기획과 디자인 담당",
+      "desc": "스포츠 운동/습관 웹사이트",
+      "highlights": ["장바구니 시스템", "Json data 사용", "Gsap 사용"],
+      "skills": ["React", "Node.js", "Json", "SCSS", "Figma"],
+      "to": "/projects/team/pacey",
+      "repo": "",
+      "live": ""
+    }
+  ],
+
+  "clone": [
+    {
+      "id": "connect",
+      "title": "Connect Wave",
+      "period": "2025.12.08 - 12.10",
+      "role": "Frontend Developer",
+      "desc": "ConnectWave 홈페이지 클론",
+      "highlights": ["Gsap 애니메이션", "UI 퍼블리싱"],
+      "skills": ["React", "Node.js", "Gsap", "Scss"],
+      "to": "/projects/clone/connect",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "momentum",
+      "title": "Momentum",
+      "period": "2025.12.03",
+      "role": "Frontend Developer",
+      "desc": "Momentum 대시보드 클론",
+      "highlights": ["실시간 날씨 API", "Focus Timer 기능"],
+      "skills": ["API", "CSS", "JavaScript"],
+      "to": "/projects/clone/momentum",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "ifkakao",
+      "title": "IF-KAKAO",
+      "period": "2025.10.28 - 10.30",
+      "role": "Frontend Developer",
+      "desc": "KAKAO 홈페이지 클론",
+      "highlights": ["스크롤 인터랙션", "반응형 레이아웃"],
+      "skills": ["React", "Scss", "Figma"],
+      "to": "/projects/clone/ifkakao",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "lg",
+      "title": "LG 프라이버시 센터",
+      "period": "2025.10.27 - 10.29",
+      "role": "Frontend Developer",
+      "desc": "LG 프라이버시 센터 홈페이지 클론",
+      "highlights": ["레이아웃 재현", "UI 퍼블리싱"],
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "to": "/projects/clone/lg",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "airbnb",
+      "title": "Airbnb",
+      "period": "2025.10.27 - 10.29",
+      "role": "Frontend Developer",
+      "desc": "Airbnb 홈페이지 클론",
+      "highlights": ["UI 레이아웃 재현", "반응형 구현"],
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "to": "/projects/clone/airbnb",
+      "repo": "",
+      "live": ""
+    }
+  ],
+
+  "personal": [
+    {
+      "id": "quiz",
+      "title": "QUIZ",
+      "period": "2026.01.02 - 01.13",
+      "role": "Frontend Lead",
+      "desc": "퀴즈 웹 애플리케이션",
+      "highlights": ["JSON 데이터 기반 문제 렌더링", "점수 실시간 연동"],
+      "skills": ["JavaScript", "CSS", "Figma"],
+      "to": "/projects/personal/quiz",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "closettrip",
+      "title": "Closet Trip",
+      "period": "2025.12.23 - 12.24",
+      "role": "Full Stack Developer",
+      "desc": "의류 관리 웹 애플리케이션",
+      "highlights": ["카드형 레이아웃 시스템", "Json data 사용"],
+      "skills": ["Node.js", "CSS", "Figma"],
+      "to": "/projects/personal/closet-trip",
+      "repo": "",
+      "live": ""
+    }
+  ],
+
+  "practical": [
+    {
+      "id": "progress",
+      "title": "CSS 애니메이션을 활용한 프로그레스바 구현",
+      "period": "2025.12.08 - 12.09",
+      "role": "Frontend Developer",
+      "desc": "CSS/애니메이션 연습",
+      "highlights": ["Progress animation", "UI 피드백 구성"],
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "to": "/projects/practical/progress",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "grid",
+      "title": "Grid 활용한 웹사이트",
+      "period": "2025.12.03",
+      "role": "Frontend Developer",
+      "desc": "Grid 레이아웃 연습",
+      "highlights": ["Grid 레이아웃", "반응형 구성"],
+      "skills": ["HTML", "CSS"],
+      "to": "/projects/practical/grid",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "selector",
+      "title": "CSS 연산 selector 구현",
+      "period": "2025.12.02",
+      "role": "Frontend Developer",
+      "desc": "selector 연습",
+      "highlights": ["선택자 응용", "스타일 구조화"],
+      "skills": ["CSS"],
+      "to": "/projects/practical/selector",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "slider",
+      "title": "끊임없이 무한으로 돌아가는 이미지 슬라이드",
+      "period": "2025.10.27 - 10.29",
+      "role": "Frontend Developer",
+      "desc": "무한 슬라이더 구현",
+      "highlights": ["Infinite loop", "애니메이션 타이밍"],
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "to": "/projects/practical/slider",
+      "repo": "",
+      "live": ""
+    },
+    {
+      "id": "academy",
+      "title": "아카데미 사이트",
+      "period": "2025.10.27 - 10.29",
+      "role": "Frontend Developer",
+      "desc": "학원 사이트 UI 구현",
+      "highlights": ["레이아웃 재현", "반응형"],
+      "skills": ["HTML", "CSS", "JavaScript"],
+      "to": "/projects/practical/academy",
+      "repo": "",
+      "live": ""
+    }
+  ]
+}

@@ -1,15 +1,16 @@
 import Listup from "../../../components/common/Listup";
+import projects from "../../../assets/data/Project.json";
 import "./List.scss";
 
 const CloneList = () => {
+  const items = projects.clone;
   return (
     <section className="list">
       <h2 className="title"># Clone Projects</h2>
 
-      <Listup to="/projects/clone/connect" title="Connect" />
-      <Listup to="/projects/clone/ifkakao" title="ifKakao" />
-      <Listup to="/projects/clone/lg" title="LG Clone" />
-      <Listup to="/projects/clone/momentum" title="Momentum" />
+      {items.map((item) => (
+        <Listup key={item.id} {...item} />
+      ))}
     </section>
   );
 };

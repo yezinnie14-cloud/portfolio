@@ -114,11 +114,7 @@ function Quiz() {
           <div className="editor__right">
             <div className="preview-shell">
               <div className="preview-shell__bar">
-                <div className="preview-shell__dots" aria-hidden>
-                  <span className="preview-dot" />
-                  <span className="preview-dot" />
-                  <span className="preview-dot" />
-                </div>
+               
 
                 <p className="preview-shell__title">QUIZ.</p>
 
@@ -130,6 +126,11 @@ function Quiz() {
                 >
                   ×
                 </button>
+                 <div className="preview-shell__dots" aria-hidden>
+                  <span className="preview-dot" />
+                  <span className="preview-dot" />
+                  <span className="preview-dot" />
+                </div>
               </div>
 
               <div className="preview-shell__body">

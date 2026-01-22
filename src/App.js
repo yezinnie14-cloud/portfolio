@@ -1,6 +1,7 @@
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./layout/Layout";
+import IntroPage from "./pages/IntroPage";
 import MainPage from "./pages/MainPage";
 import AboutPage from "./pages/AboutPage";
 import ProjectPage from "./pages/ProjectPage";
@@ -31,6 +32,7 @@ import Quiz from "./pages/section/Detail/Personal/Quiz";
 import { TabsProvider } from "./context/tabsContext";
 
 
+
 const App = () => {
   return (
     <TabsProvider>
@@ -38,6 +40,7 @@ const App = () => {
         <Routes>
           <Route element={<Layout />}>
             {/* 기본 페이지 */}
+            <Route path="/intro" element={<IntroPage />} />
             <Route path="/" element={<MainPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/skills" element={<SkillsPage />} />

@@ -46,7 +46,7 @@
     .cards {
       @include flex-layout($gap: 3.5rem);
       .card {
-        padding: 5rem;
+        padding: 5rem 8rem;
         border-radius: 0.8rem;
         border: 1px solid rgba(255, 255, 255, 0.08);
         background-color: $card-bg;

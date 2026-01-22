@@ -1,22 +1,18 @@
 // src/pages/section/Detail/Clone/ConnectWave.js
 import "./CloneDetail.scss";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 function ConnectWave() {
   const [mode, setMode] = useState("compare"); // "compare" | "checklist"
 
-  const links = useMemo(
-    () => ({
-      original: "", // 원본 주소
-      repo: "",     // 깃허브
-      live: ""      // 배포링크
-    }),
-    []
-  );
+  // ✅ 그냥 객체로 선언
+  const links = {
+    original: "", // 원본 주소
+    repo: "",     // 깃허브
+    live: ""      // 배포링크
+  };
 
-  // ✅ 이미지 import로 연결하면 제일 안전함
-  // import originalImg from "../../../../assets/images/Clone/connectwave/original.png";
-  // import cloneImg from "../../../../assets/images/Clone/connectwave/clone.png";
+  // 이미지 (나중에 import로 교체 추천)
   const originalImg = null;
   const cloneImg = null;
 
@@ -30,8 +26,13 @@ function ConnectWave() {
 
   return (
     <section className="clone-detail">
+      {/* HEADER */}
       <header className="clone-head">
-        <button type="button" className="clone-head__back" onClick={() => window.history.back()}>
+        <button
+          type="button"
+          className="clone-head__back"
+          onClick={() => window.history.back()}
+        >
           ← Back to Projects
         </button>
 
@@ -45,7 +46,7 @@ function ConnectWave() {
               배포 링크
             </a>
           ) : (
-            <button className="btn btn--primary" type="button" disabled>
+            <button className="btn btn--primary" disabled>
               배포 링크
             </button>
           )}
@@ -55,7 +56,7 @@ function ConnectWave() {
               깃허브 레포지토리
             </a>
           ) : (
-            <button className="btn" type="button" disabled>
+            <button className="btn" disabled>
               깃허브 레포지토리
             </button>
           )}
@@ -65,7 +66,7 @@ function ConnectWave() {
               원본 사이트
             </a>
           ) : (
-            <button className="btn" type="button" disabled>
+            <button className="btn" disabled>
               원본 사이트
             </button>
           )}
@@ -73,14 +74,12 @@ function ConnectWave() {
 
         <div className="clone-head__tabs">
           <button
-            type="button"
             className={`mini-tab ${mode === "compare" ? "is-active" : ""}`}
             onClick={() => setMode("compare")}
           >
             Compare
           </button>
           <button
-            type="button"
             className={`mini-tab ${mode === "checklist" ? "is-active" : ""}`}
             onClick={() => setMode("checklist")}
           >
@@ -89,12 +88,15 @@ function ConnectWave() {
         </div>
       </header>
 
+      {/* BODY */}
       <div className="clone-body">
-        {/* LEFT: 설명 영역 */}
+        {/* LEFT */}
         <div className="clone-body__left">
           <section className="panel">
             <h2 className="panel__title">• 한 줄 요약</h2>
-            <p className="panel__text">GSAP 라이브러리를 활용한 인터랙티브 웹 구현</p>
+            <p className="panel__text">
+              GSAP 라이브러리를 활용한 인터랙티브 웹 구현
+            </p>
           </section>
 
           <section className="panel">
@@ -107,32 +109,23 @@ function ConnectWave() {
 
             <h3 className="panel__sub">• 주요 기능 & 구현 포인트</h3>
             <ul className="panel__list">
-              <li>GSAP 애니메이션: 요소 등장/이동/페이드 효과 구현</li>
-              <li>스크롤 연동: 콘텐츠 흐름을 자연스럽게 전환되도록 구성</li>
-              <li>타이밍 제어: GSAP Timeline으로 애니메이션 흐름 관리</li>
-              <li>섹션별 전환: 화면 전환 시 각 섹션마다 다른 모션 적용</li>
-              <li>UI 몰입도 강화: 정적인 화면이 아닌 “움직임 중심” 페이지 구성</li>
+              <li>GSAP 애니메이션 효과 구현</li>
+              <li>스크롤 연동 콘텐츠 전환</li>
+              <li>Timeline 기반 모션 제어</li>
+              <li>섹션별 전환 애니메이션</li>
             </ul>
 
             <h3 className="panel__sub">• 기술스택</h3>
             <ul className="panel__list">
-              <li>Language: JavaScript (ES6+)</li>
-              <li>Framework: React.js</li>
-              <li>Animation: GSAP</li>
-              <li>Styling: SCSS</li>
-              <li>Design & Tool: Figma, Git, GitHub</li>
-            </ul>
-
-            <h3 className="panel__sub">• 배운점</h3>
-            <ul className="panel__list">
-              <li>ScrollTrigger 처리 및 다양한 애니메이션 효과</li>
-              <li>타임라인으로 모션을 설계하는 방식</li>
-              <li>레이아웃/텍스트 리듬이 UX 몰입도에 주는 영향</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>GSAP</li>
+              <li>SCSS</li>
             </ul>
           </section>
         </div>
 
-        {/* RIGHT: 모드별 뷰 */}
+        {/* RIGHT */}
         <div className="clone-body__right">
           {mode === "compare" ? (
             <div className="compare">
@@ -140,9 +133,9 @@ function ConnectWave() {
                 <div className="compare__label">Original</div>
                 <div className="preview-frame preview-frame--light">
                   {originalImg ? (
-                    <img className="preview-frame__img" src={originalImg} alt="original preview" />
+                    <img src={originalImg} alt="original preview" />
                   ) : (
-                    <div className="preview-frame__empty">원본 캡처.</div>
+                    <div className="preview-frame__empty">원본 캡처</div>
                   )}
                 </div>
               </div>
@@ -151,9 +144,9 @@ function ConnectWave() {
                 <div className="compare__label">Clone</div>
                 <div className="preview-frame preview-frame--light">
                   {cloneImg ? (
-                    <img className="preview-frame__img" src={cloneImg} alt="clone preview" />
+                    <img src={cloneImg} alt="clone preview" />
                   ) : (
-                    <div className="preview-frame__empty">클론 캡처.</div>
+                    <div className="preview-frame__empty">클론 캡처</div>
                   )}
                 </div>
               </div>
@@ -161,26 +154,16 @@ function ConnectWave() {
           ) : (
             <div className="checklist">
               <h3 className="checklist__title">Reproduction Checklist</h3>
-
               <ul className="checklist__list">
-                {checklist.map((c) => (
-                  <li key={c.id} className={`check checklist--${c.status}`}>
+                {checklist.map((item) => (
+                  <li key={item.id} className={`check checklist--${item.status}`}>
                     <span className="check__badge">
-                      {c.status === "done" ? "✅" : c.status === "partial" ? "⏳" : "⬜"}
+                      {item.status === "done" ? "✅" : item.status === "partial" ? "⏳" : "⬜"}
                     </span>
-                    <span className="check__text">{c.label}</span>
+                    <span className="check__text">{item.label}</span>
                   </li>
                 ))}
               </ul>
-
-              <div className="panel panel--soft">
-                <h4 className="panel__title">• 개선 계획</h4>
-                <ul className="panel__list">
-                  <li>반응형 섹션별 모션 최적화</li>
-                  <li>이미지/폰트 로딩 최적화로 퍼포먼스 개선</li>
-                  <li>컴포넌트 분리로 유지보수성 강화</li>
-                </ul>
-              </div>
             </div>
           )}
         </div>

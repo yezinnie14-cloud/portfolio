@@ -1,0 +1,171 @@
+/* src/pages/AboutPage.scss */
+
+.about-page {
+  padding: 24px;
+
+  &__header {
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  &__desc {
+    margin: 0;
+    opacity: 0.8;
+    line-height: 1.6;
+  }
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 14px;
+  min-height: calc(100vh - 180px);
+}
+
+.about-nav {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 14px;
+
+  &__label {
+    margin: 0 0 10px;
+    font-weight: 800;
+    opacity: 0.85;
+  }
+
+  &__list {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__item {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    opacity: 0.85;
+
+    &:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+    &.is-active {
+      opacity: 1;
+      border-color: rgba(124, 199, 255, 0.35);
+      background: rgba(124, 199, 255, 0.08);
+    }
+  }
+}
+
+.about-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 18px;
+  overflow: auto;
+
+  &__file {
+    margin: 0 0 6px;
+    opacity: 0.7;
+    font-size: 13px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  &__headline {
+    margin: 8px 0 12px;
+    opacity: 0.85;
+    line-height: 1.6;
+  }
+}
+
+.about-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  &__chip {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 12px;
+    opacity: 0.9;
+  }
+}
+
+.about-accordion {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.about-item {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+
+  &__head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18px 1fr 24px;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 14px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+  }
+
+  &__dot {
+    opacity: 0.8;
+  }
+
+  &__key {
+    font-weight: 800;
+    opacity: 0.9;
+  }
+
+  &__chev {
+    text-align: right;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+
+  &__body {
+    padding: 0 14px 14px;
+  }
+
+  &__text {
+    margin: 0;
+    opacity: 0.85;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}

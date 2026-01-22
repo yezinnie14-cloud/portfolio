@@ -2,7 +2,7 @@ import "./SkillsPage.scss";
 import data from "../assets/data/Skills.json";
 import SkillCard from "../components/common/SkillsCard";
 
-// 🔥 Icons 폴더에서 svg 자동 로드
+
 const icons = require.context("../assets/images/Icons", false, /\.svg$/);
 
 function getIcon(fileName) {
@@ -23,7 +23,7 @@ function SkillsPage() {
       <header className="skills-page__header">
         <h2 className="skills-page__title"># Skills</h2>
         <p className="skills-page__desc">
-          다양한 기술 스택을 활용해 프로젝트를 구현해왔습니다.
+          다양한 기술 스택을 활용해 프로젝트를 구현하고 있습니다.
         </p>
       </header>
 

@@ -1,5 +1,4 @@
-/* src/pages/section/Detail/Clone/CloneDetail.scss */
-
+@use "src/assets/scss/_variables.scss"as *; 
 .clone-detail {
   padding: 24px;
 
@@ -25,6 +24,7 @@
       margin: 0;
       font-size: 40px;
       font-weight: 800;
+      color: $color-yellow;
     }
 
     &__subtitle {

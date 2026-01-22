@@ -1,4 +1,3 @@
-// src/pages/section/Detail/Clone/ConnectWave.js
 import "./CloneDetail.scss";
 import { useState } from "react";
 

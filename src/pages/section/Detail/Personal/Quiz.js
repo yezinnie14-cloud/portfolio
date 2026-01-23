@@ -1,7 +1,7 @@
-// src/pages/section/Detail/Personal/Quiz.js
+
 import "./PersonalDetail.scss";
 import { useMemo, useState } from "react";
-// import quizPreview from "../../../../assets/images/Personal/quiz/quiz.png";
+import quizPreview from "../../../../assets/images/Personal/quiz.png";
 
 function Quiz() {
   const [openPreview, setOpenPreview] = useState(false);
@@ -14,7 +14,7 @@ function Quiz() {
     []
   );
 
-  const quizPreview = null; // 이미지 연결하면 import로 바꿔
+  // const quizPreview = null;
 
   return (
     <section className="detail-page detail-page--editor">

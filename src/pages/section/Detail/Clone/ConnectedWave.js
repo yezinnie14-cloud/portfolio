@@ -10,7 +10,6 @@ function ConnectWave() {
     live: ""
   };
 
-  const originalImg = null;
   const cloneImg = null;
 
   const checklist = [
@@ -126,17 +125,6 @@ function ConnectWave() {
         <div className="clone-right">
           {mode === "compare" ? (
             <div className="compare-view">
-              <div className="compare-col">
-                <div className="compare-label">Original</div>
-                <div className="preview-frame light">
-                  {originalImg ? (
-                    <img src={originalImg} alt="original preview" />
-                  ) : (
-                    <div className="preview-empty">원본 캡처</div>
-                  )}
-                </div>
-              </div>
-
               <div className="compare-col">
                 <div className="compare-label">Clone</div>
                 <div className="preview-frame light">

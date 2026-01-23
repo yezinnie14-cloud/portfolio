@@ -84,13 +84,15 @@
 
 .preview-shell__body {
   flex: 1;
-  padding: 18px;
+  padding: 5rem;
   background: #fff;
 }
 
 .preview-shell__img {
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
 }
 

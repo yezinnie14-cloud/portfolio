@@ -1,20 +1,18 @@
-// src/pages/section/Detail/Personal/Quiz.js
 import "./PersonalDetail.scss";
 import { useMemo, useState } from "react";
-// import quizPreview from "../../../../assets/images/Personal/quiz/quiz.png";
+import quizPreview from "../../../../assets/images/Personal/closettrip.png";
 
 function ClosetTrip() {
   const [openPreview, setOpenPreview] = useState(false);
 
   const links = useMemo(
     () => ({
-      github: "", // "https://github.com/..."
+      github: "https://github.com/yezinnie14/Closet-trip",
       live: "", // "https://..."
     }),
     []
   );
 
-  const quizPreview = null; // 이미지 연결하면 import로 바꿔
 
   return (
     <section className="detail-page detail-page--editor">
@@ -68,22 +66,20 @@ function ClosetTrip() {
           <section className="panel">
             <h2 className="panel__title">• 한 줄 요약</h2>
             <p className="panel__text">
-              JSON 데이터를 활용한 동적 문제 렌더링 및 실시간 점수 계산 로직 구현
+              카드형 레이아웃 쇼핑몰 웹 사이트
             </p>
           </section>
 
           <section className="panel">
             <h2 className="panel__title">• 진행 기간</h2>
-            <p className="panel__text">2025.12.01 - 2025.12.30 (4주)</p>
+            <p className="panel__text">2025.12.23 - 2025.12.24 (2일)</p>
           </section>
 
           <section className="panel">
             <h2 className="panel__title">• 주요 기능 & 구현 포인트</h2>
             <ul className="panel__list">
-              <li>질문 & 답 선택: 여러 개의 문제를 순서대로 제공하고 답 선택 가능</li>
-              <li>점수 계산: 정답 여부 판별해 점수 누적 및 결과 표시</li>
-              <li>UI 업데이트: 선택/제출에 따라 화면이 동적으로 전환</li>
-              <li>버튼 이벤트: 다음 문제 이동, 결과 보기</li>
+              <li>사용자의 편리성을 위해 자세한 룩 키워드 삽입</li>
+              <li>사용자 가독성을 최우선으로 고려한 타이포그래픽 및 카드형 레이아웃 설계</li>
             </ul>
           </section>
 

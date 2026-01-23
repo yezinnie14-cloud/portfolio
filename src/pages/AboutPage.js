@@ -16,8 +16,8 @@ export default function AboutPage() {
 
   const content = {
     why: {
-      headline: "설명 가능한 선택을 보여주는 포트폴리오",
-      keywords: ["기준", "흐름", "설명 가능성"],
+      headline: "한 줄 내용 ",
+      keywords: ["keyword", "2", "3"],
       blocks: [
         {
           k: "의도",

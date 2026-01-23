@@ -1,4 +1,4 @@
-/* ====== Editor Layout (single -> split) ====== */
+@use "src/assets/scss/_variables.scss"as *; 
 
 .detail-page--editor {
   padding: 0;
@@ -23,6 +23,11 @@
   overflow: auto;
   padding: 24px;
   // background: rgba(255, 255, 255, 0.02);
+
+
+  .detail-top__title{
+    color: $color-yellow;
+  }
 }
 
 /* split일 때만 가운데 라인 */

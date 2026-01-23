@@ -96,7 +96,7 @@ function ClosetTrip() {
             <h2 className="panel__title">• Trouble Shooting</h2>
             <div className="ts">
               <p className="ts__k">문제</p>
-              <p className="ts__v">초기 디자인이 단순해 밋밋하고 몰입감이 떨어짐</p>
+              <p className="ts__v">찜을 설정하고 싶어서 하트를 누르면 색이 바뀌게끔 설정했는데 색이 바뀐 하트 크기가 맞지 않음 </p>
               <p className="ts__k">원인</p>
               <p className="ts__v">피드백 요소 부족, 전환이 즉각적이라 변화가 덜 느껴짐</p>
               <p className="ts__k">해결</p>

@@ -1,11 +1,11 @@
-.team-detail {
-  padding: 3rem ;
+.team-page {
+  padding: 3rem;
 
-  &__top {
+  .team-header {
     margin-bottom: 24px;
   }
 
-  &__back {
+  .back-button {
     background: none;
     border: none;
     color: #8ab4f8;
@@ -13,58 +13,95 @@
     margin-bottom: 12px;
   }
 
-  &__category {
+  .project-category {
     font-size: 12px;
     opacity: 0.6;
     margin-bottom: 4px;
   }
 
-  &__title {
+  .project-title {
     font-size: 28px;
     font-weight: 700;
   }
 
-  &__subtitle {
+  .project-subtitle {
     margin-top: 6px;
     opacity: 0.75;
   }
 
-  &__actions {
+  .project-actions {
     display: flex;
     gap: 8px;
     margin-top: 14px;
   }
 }
 
-/* panel */
-.panel {
+/* section (기존 panel 역할) */
+.section {
   margin-top: 24px;
   padding: 18px;
   border-radius: 12px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.section-title {
+  // 필요하면 스타일 추가 가능
 }
 
 /* preview */
-.preview {
+.preview-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 16px;
+}
 
-  &__img {
-    width: 100%;
-    border-radius: 10px;
-  }
+.preview-image {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* overview */
-.overview {
+.overview-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 24px;
 }
 
+.overview-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.overview-text {
+  opacity: 0.85;
+}
+
+/* meta */
+.overview-meta {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.meta-item {
+  .meta-label {
+    font-weight: 600;
+  }
+
+  .meta-value {
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+}
+
+.meta-list {
+  margin-top: 6px;
+  opacity: 0.85;
+  padding-left: 18px;
+}
+
 /* chips */
-.chips {
+.tech-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -74,27 +111,43 @@
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 12px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 /* troubleshooting */
-.ts {
+.trouble-list {
   display: grid;
   gap: 16px;
+}
 
-  &__card {
-    padding: 14px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.25);
+.trouble-card {
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+
+  .trouble-title {
+    font-weight: 700;
+    margin-bottom: 8px;
   }
 
-  &__k {
+  .label {
     font-weight: 600;
     margin-top: 8px;
   }
 
-  &__v {
-    opacity: 0.8;
+  p {
+    opacity: 0.85;
     margin-top: 4px;
+  }
+}
+
+/* 반응형: 모바일에서 preview/overview 세로 */
+@media (max-width: 980px) {
+  .preview-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-layout {
+    grid-template-columns: 1fr;
   }
 }

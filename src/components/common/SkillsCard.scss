@@ -7,31 +7,34 @@
   display: grid;
   place-items: center;
   gap: 10px;
+}
 
-  &__icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    transition:
-      transform 0.25s ease,
-      box-shadow 0.25s ease;
-    &:hover {
-      transform: scale(1.2) translateY(-4px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-    }
+/* icon */
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+  &:hover {
+    transform: scale(1.2) translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
   }
 
-  &__label {
-    margin: 0;
-    font-size: 12px;
-    opacity: 0.85;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
+}
+
+/* label */
+.skill-label {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.85;
 }

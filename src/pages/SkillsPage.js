@@ -31,7 +31,7 @@ function SkillsPage() {
           <div key={sec.id} className="skills-section">
             <div className="section-head">
               <span className="dot">•</span>
-              <h3 className="section-title">{sec.title}</h3>
+              <p className={`section-title ${sec.id}`}>{sec.title}</p>
             </div>
 
             <div className="skills-grid">

@@ -1,3 +1,6 @@
+@use "../../assets/scss/mixins" as *;
+@use "../../assets/scss/variables" as *;
+@use "../../assets/scss/fonts" as *;
 .skill-card {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -7,10 +10,7 @@
   display: grid;
   place-items: center;
   gap: 10px;
-}
-
-/* icon */
-.skill-icon {
+  .skill-icon {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -31,10 +31,13 @@
     object-fit: contain;
   }
 }
-
-/* label */
 .skill-label {
   margin: 0;
-  font-size: 12px;
+  @include caption-b();
   opacity: 0.85;
 }
+}
+
+
+
+

@@ -9,8 +9,8 @@ const DEFAULT_TAB = {
 };
 
 export function TabsProvider({ children }) {
-  const [tabs, setTabs] = useState([DEFAULT_TAB]);   // ✅ 처음부터 README 열려있게
-  const [activeId, setActiveId] = useState("readme"); // ✅ active도 README
+  const [tabs, setTabs] = useState([DEFAULT_TAB]);   // 처음부터 README 열려있게
+  const [activeId, setActiveId] = useState("readme"); //  active도 README
 
   const openTab = (tab) => {
     setTabs((prev) => {
@@ -26,7 +26,7 @@ export function TabsProvider({ children }) {
     setTabs((prev) => {
       const next = prev.filter((t) => t.id !== id);
 
-      // ✅ README는 닫히지 않게 하고 싶으면(선택)
+      // README는 닫히지 않게 하고 싶으면(선택)
       // if (id === "readme") return prev;
 
       // 닫은 탭이 active였으면 다른 탭 활성화

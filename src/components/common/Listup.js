@@ -27,7 +27,7 @@ function Listup(props) {
       onKeyDown={(e) => e.key === "Enter" && handleClick()}
     >
       <div className="list-header">
-        <h3 className="list-title">{title}</h3>
+        <p className="list-title">{title}</p>
 
         <div className="list-icons" onClick={stop}>
           {repo ? (

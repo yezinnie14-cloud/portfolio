@@ -34,7 +34,7 @@ export function TabsProvider({ children }) {
         const fallback = next[next.length - 1] || DEFAULT_TAB;
         setActiveId(fallback.id);
       }
-      return next.length ? next : [DEFAULT_TAB]; // ✅ 최소 README 하나는 남김(선택)
+      return next.length ? next : [DEFAULT_TAB]; // 최소 README 하나는 남김(선택)
     });
   };
 

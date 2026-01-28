@@ -16,12 +16,12 @@ export default function GnbFile({ node, depth = 0 }) {
   // 현재 페이지 경로와 같으면 active(파일일 때만)
   const isActiveFile = !isFolder && node.path === location.pathname;
 
-  // 📁 폴더 클릭: 열고/닫기
+  // 폴더 클릭: 열고/닫기
   const handleFolderClick = () => {
     setOpen((prev) => !prev);
   };
 
-  // 📄 파일 클릭: 탭 열기 + 이동 + active 설정
+  // 파일 클릭: 탭 열기 + 이동 + active 설정
   const handleFileClick = () => {
     openTab({
       id: node.id,       // JSON에 있는 id
